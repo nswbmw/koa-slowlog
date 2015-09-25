@@ -1,0 +1,29 @@
+{
+  "name": "koa-slowlog",
+  "description": "slowlog for koa, based on [co-slowlog](https://github.com/nswbmw/co-slowlog).",
+  "version": "1.0.0",
+  "keywords": [
+    "bunyan",
+    "koa",
+    "slowlog",
+    "log",
+    "logger",
+    "redis",
+    "stream"
+  ],
+  "dependencies": {
+    "co-slowlog": "^1.1.0",
+    "merge-descriptors": "^1.0.0",
+    "pkg-up": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nswbmw/koa-slowlog"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "co-wait": "0.0.0",
+    "koa": "^1.0.0",
+    "koa-bodyparser": "^2.0.1"
+  }
+}
