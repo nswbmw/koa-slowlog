@@ -7,10 +7,10 @@ module.exports = function (options) {
   options.name = options.name || (require(pkg) || {}).name;
   options.input = options.output = options.fn = options.filename = undefined;
 
-  let slowlog = require('co-slowlog')(options);
+  let _slowlog = require('co-slowlog')(options);
 
-  return function* (next) {
-    yield slowlog(function* () {
+  return function* slowlog(next) {
+    yield _slowlog(function* () {
       yield next;
     }, {
       method: this.method,
